@@ -8,7 +8,6 @@ export class AppController {
 
   @Get()
   async getHello(@Query() query: MdvDto) {
-    console.log('🚀 ~ AppController ~ getHello ~ query:', query);
     return await this.appService.getHello(query);
   }
 }
